@@ -27,10 +27,10 @@ class cTab_Mail_ico_disp {
 			colorText[] = { };
 			font = "puristaLight";
 			sizeEx = 0.053;
-			x = QUOTE(GUI_GRID_X);
-			y = QUOTE(GUI_GRID_Y);
-			w = QUOTE(GUI_GRID_W);
-			h = QUOTE(GUI_GRID_H);
+			x = GUI_GRID_X;
+			y = GUI_GRID_Y;
+			w = GUI_GRID_W;
+			h = GUI_GRID_H;
 			text = "\cTab\img\icon_mail_ca.paa";
 		};
 	};

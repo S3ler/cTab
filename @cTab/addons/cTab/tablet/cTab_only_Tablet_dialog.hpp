@@ -1,5 +1,5 @@
-#ifndef CTAB_TABLET_DIALOG_H
-#define CTAB_TABLET_DIALOG_H
+#ifndef CTAB_ONLY_TABLET_DIALOG_H
+#define CTAB_ONLY_TABLET_DIALOG_H
 // FIXME: Adding header guard will most likely break cTab_Tablet_dialog.hpp and cTab_android_dialog.hpp
 #include <\cTab\shared\cTab_android_Tablet_dialog.hpp>
 

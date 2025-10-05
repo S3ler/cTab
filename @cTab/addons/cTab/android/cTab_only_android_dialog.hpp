@@ -1,6 +1,5 @@
-#ifndef CTAB_ANDROID_DIALOG_H
-#define CTAB_ANDROID_DIALOG_H
-
+#ifndef CTAB_ONLY_ANDROID_DIALOG_H
+#define CTAB_ONLY_ANDROID_DIALOG_H
 // FIXME: Adding header guard will most likely break cTab_Tablet_dialog.hpp and cTab_android_dialog.hpp
 #include <\cTab\shared\cTab_android_Tablet_dialog.hpp>
 
@@ -281,7 +280,7 @@ class cTab_Android_dlg {
 					w = pxToScreen_W(cTab_GUI_android_MESSAGE_BUTTON_SEND_W);
 					h = pxToScreen_H(cTab_GUI_android_MESSAGE_BUTTON_H);
 					onButtonClick = QUOTE(_this call EFUNC(messaging,btnShowMedevacTemplate););
-				};			
+				};
 				class TemplatesBtn: cTab_RscButton
 				{
 					idc = IDC_CTAB_MSG_TEMPLATES;

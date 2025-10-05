@@ -1641,8 +1641,8 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		color[] = {0.45,0.64,0.33,0.4};
-		size = "14/2";
-		importance = "0.2 * 14 * 0.05 * 0.05";
+		size = 14/2;
+		importance = 0.2 * 14 * 0.05 * 0.05;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1651,7 +1651,7 @@ class cTab_RscMapControl
 		icon = "\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
 		color[] = {0.1,0.1,0.1,0.8};
 		size = 12;
-		importance = "0.5 * 12 * 0.05";
+		importance = 0.5 * 12 * 0.05;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1660,7 +1660,7 @@ class cTab_RscMapControl
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		color[] = {0.45,0.64,0.33,0.4};
 		size = 12;
-		importance = "0.6 * 12 * 0.05";
+		importance = 0.6 * 12 * 0.05;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1669,7 +1669,7 @@ class cTab_RscMapControl
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		color[] = {0.45,0.64,0.33,0.4};
 		size = 12;
-		importance = "0.9 * 16 * 0.05";
+		importance = 0.9 * 16 * 0.05;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1812,7 +1812,7 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		size = 14;
-		importance = "1.5 * 14 * 0.05";
+		importance = 1.5 * 14 * 0.05;
 		coefMin = 0.25;
 		coefMax = 4;
 		color[] = {0,0,0,1};
@@ -1821,7 +1821,7 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		size = 16;
-		importance = "2 * 16 * 0.05";
+		importance = 2 * 16 * 0.05;
 		coefMin = 0.25;
 		coefMax = 4;
 		color[] = {0,0,0,1};
@@ -1830,7 +1830,7 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\fountain_ca.paa";
 		size = 11;
-		importance = "1 * 12 * 0.05";
+		importance = 1 * 12 * 0.05;
 		coefMin = 0.25;
 		coefMax = 4;
 		color[] = {0,0,0,1};
@@ -1839,7 +1839,7 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\ruin_ca.paa";
 		size = 16;
-		importance = "1.2 * 16 * 0.05";
+		importance = 1.2 * 16 * 0.05;
 		coefMin = 1;
 		coefMax = 4;
 		color[] = {0,0,0,1};
@@ -1848,7 +1848,7 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\stack_ca.paa";
 		size = 20;
-		importance = "2 * 16 * 0.05";
+		importance = 2 * 16 * 0.05;
 		coefMin = 0.9;
 		coefMax = 4;
 		color[] = {0,0,0,1};
@@ -1857,7 +1857,7 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
 		size = 16;
-		importance = "1 * 16 * 0.05";
+		importance = 1 * 16 * 0.05;
 		coefMin = 0.7;
 		coefMax = 4;
 		color[] = {0,0,0,1};
@@ -1866,7 +1866,7 @@ class cTab_RscMapControl
 	{
 		icon = "\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa";
 		size = 16;
-		importance = "2.5 * 16 * 0.05";
+		importance = 2.5 * 16 * 0.05;
 		coefMin = 0.5;
 		coefMax = 4;
 		color[] = {0,0,0,1};

@@ -1,8 +1,14 @@
-// Background definition
-#define GUI_GRID_PX_W 2048 // width in pixels
-#define GUI_GRID_PX_H 2048 // hight in pixels
+#ifndef CTAB_MICRODAGR_CONTROLS_H
+#define CTAB_MICRODAGR_CONTROLS_H
 
-// Base bacros to convert pixel space to screen space
+
+// Background definition
+// width in pixels
+#define GUI_GRID_PX_W 2048
+// height in pixels
+#define GUI_GRID_PX_H 2048
+
+// Base macros to convert pixel space to screen space
 #define pxToScreen_X(PIXEL) QUOTE((PIXEL) / GUI_GRID_PX_W * GUI_GRID_W + GUI_GRID_X)
 #define pxToScreen_Y(PIXEL) QUOTE((PIXEL) / GUI_GRID_PX_H * GUI_GRID_H + GUI_GRID_Y)
 #define pxToScreen_W(PIXEL) QUOTE((PIXEL) / GUI_GRID_PX_W * GUI_GRID_W)
@@ -333,3 +339,5 @@ class cTab_microDAGR_brightness: cTab_RscText_microDAGR
 	h = pxToScreen_H(cTab_GUI_microDAGR_MAP_H);
 	colorBackground[] = COLOR_TRANSPARENT;
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef CTAB_MARKER_MENU_CONTROLS_H
+#define CTAB_MARKER_MENU_CONTROLS_H
+
 #define CTAB_MENU_ENTRY(label,index,pos,value,next) \
 		class btn##index: cTab_MenuItem \
 		{ \
@@ -44,15 +47,15 @@
 class MainSubmenu: cTab_RscControlsGroup
 {
 	#ifndef cTab_IS_TABLET
-		#define cTab_MENU_MAX_ELEMENTS 7
+		#define cTab_MAIN_SUB_MENU_MAX_ELEMENTS 7
 	#else
-		#define cTab_MENU_MAX_ELEMENTS 8
+		#define cTab_MAIN_SUB_MENU_MAX_ELEMENTS 8
 	#endif
 	idc = 3300;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_MAIN_SUB_MENU_MAX_ELEMENTS);
 	class controls
 	{
 		class mainbg: cTab_IGUIBack
@@ -61,7 +64,7 @@ class MainSubmenu: cTab_RscControlsGroup
 			x = 0;
 			y = 0;
 			w = QUOTE(MENU_W);
-			h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+			h = MENU_H(cTab_MAIN_SUB_MENU_MAX_ELEMENTS);
 		};
 		class op4btn: cTab_MenuItem
 		{
@@ -121,7 +124,7 @@ class MainSubmenu: cTab_RscControlsGroup
 			idc = -1;
 			text = "$STR_ctab_core_MenuExit";
 			x = 0;
-			y = MENU_elementY(cTab_MENU_MAX_ELEMENTS);
+			y = MENU_elementY(cTab_MAIN_SUB_MENU_MAX_ELEMENTS);
 			w = QUOTE(MENU_W);
 			h = QUOTE(MENU_elementH);
 			sizeEx = QUOTE(MENU_sizeEx);
@@ -132,12 +135,12 @@ class MainSubmenu: cTab_RscControlsGroup
 
 class EnemySub1: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 10
+	#define cTab_ENEMY_SUB1_MENU_MAX_ELEMENTS 10
 	idc = 3301;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_ENEMY_SUB1_MENU_MAX_ELEMENTS);
 	class controls
 	{
 		class IGUIBack_2201: cTab_IGUIBack
@@ -146,7 +149,7 @@ class EnemySub1: cTab_RscControlsGroup
 			x = 0;
 			y = 0;
 			w = QUOTE(MENU_W);
-			h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+			h = MENU_H(cTab_ENEMY_SUB1_MENU_MAX_ELEMENTS);
 		};
 		class infbtn: cTab_MenuItem
 		{
@@ -242,7 +245,7 @@ class EnemySub1: cTab_RscControlsGroup
 			idc = -1;
 			text = "$STR_ctab_core_MenuExit";
 			x = 0;
-			y = MENU_elementY(cTab_MENU_MAX_ELEMENTS);
+			y = MENU_elementY(cTab_ENEMY_SUB1_MENU_MAX_ELEMENTS);
 			w = QUOTE(MENU_W);
 			h = QUOTE(MENU_elementH);
 			sizeEx = QUOTE(MENU_sizeEx);
@@ -253,12 +256,12 @@ class EnemySub1: cTab_RscControlsGroup
 
 class EnemySub2: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 6
+	#define cTab_ENEMY_SUB2_MENU_MAX_ELEMENTS 6
 	idc = 3303;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_ENEMY_SUB2_MENU_MAX_ELEMENTS);
 	class controls
 	{
 		class IGUIBack_2202: cTab_IGUIBack
@@ -267,7 +270,7 @@ class EnemySub2: cTab_RscControlsGroup
 			x = 0;
 			y = 0;
 			w = QUOTE(MENU_W);
-			h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+			h = MENU_H(cTab_ENEMY_SUB2_MENU_MAX_ELEMENTS);
 		};
 		class ftbtn: cTab_MenuItem
 		{
@@ -337,7 +340,7 @@ class EnemySub2: cTab_RscControlsGroup
 			idc = -1;
 			text = "$STR_ctab_core_MenuExit";
 			x = 0;
-			y = MENU_elementY(cTab_MENU_MAX_ELEMENTS);
+			y = MENU_elementY(cTab_ENEMY_SUB2_MENU_MAX_ELEMENTS);
 			w = QUOTE(MENU_W);
 			h = QUOTE(MENU_elementH);
 			sizeEx = QUOTE(MENU_sizeEx);
@@ -348,12 +351,12 @@ class EnemySub2: cTab_RscControlsGroup
 
 class EnemySub3: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 6
+	#define cTab_ENEMY_SUB3_MENU_MAX_ELEMENTS 6
 	idc = 3304;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_ENEMY_SUB3_MENU_MAX_ELEMENTS);
 	class controls
 	{
 		class IGUIBack_2203: cTab_IGUIBack
@@ -362,7 +365,7 @@ class EnemySub3: cTab_RscControlsGroup
 			x = 0;
 			y = 0;
 			w = QUOTE(MENU_W);
-			h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+			h = MENU_H(cTab_ENEMY_SUB3_MENU_MAX_ELEMENTS);
 		};
 
 
@@ -415,7 +418,7 @@ class EnemySub3: cTab_RscControlsGroup
 			idc = -1;
 			text = "$STR_ctab_core_MenuExit";
 			x = 0;
-			y = MENU_elementY(cTab_MENU_MAX_ELEMENTS);
+			y = MENU_elementY(cTab_ENEMY_SUB3_MENU_MAX_ELEMENTS);
 			w = QUOTE(MENU_W);
 			h = QUOTE(MENU_elementH);
 			sizeEx = QUOTE(MENU_sizeEx);
@@ -426,12 +429,12 @@ class EnemySub3: cTab_RscControlsGroup
 
 class EnemySub4: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 8
+	#define cTab_ENEMY_SUB4_MENU_MAX_ELEMENTS 8
 	idc = 3307;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_ENEMY_SUB4_MENU_MAX_ELEMENTS);
 	class controls
 	{
 		class IGUIBack_2202: cTab_IGUIBack
@@ -440,7 +443,7 @@ class EnemySub4: cTab_RscControlsGroup
 			x = 0;
 			y = 0;
 			w = QUOTE(MENU_W);
-			h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+			h = MENU_H(cTab_ENEMY_SUB4_MENU_MAX_ELEMENTS);
 		};
 		class rifle_btn: cTab_MenuItem
 		{
@@ -531,7 +534,7 @@ class EnemySub4: cTab_RscControlsGroup
 			idc = -1;
 			text = "$STR_ctab_core_MenuExit";
 			x = 0;
-			y = MENU_elementY(cTab_MENU_MAX_ELEMENTS);
+			y = MENU_elementY(cTab_ENEMY_SUB4_MENU_MAX_ELEMENTS);
 			w = QUOTE(MENU_W);
 			h = QUOTE(MENU_elementH);
 			sizeEx = QUOTE(MENU_sizeEx);
@@ -542,12 +545,12 @@ class EnemySub4: cTab_RscControlsGroup
 
 class CasulSub1: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 5
+	#define cTab_CASUL_SUB1_MENU_MAX_ELEMENTS 5
 	idc = 3305;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_CASUL_SUB1_MENU_MAX_ELEMENTS);
 	class controls
 	{
 		class IGUIBack_2204: cTab_IGUIBack
@@ -556,7 +559,7 @@ class CasulSub1: cTab_RscControlsGroup
 			x = 0;
 			y = 0;
 			w = QUOTE(MENU_W);
-			h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+			h = MENU_H(cTab_CASUL_SUB1_MENU_MAX_ELEMENTS);
 		};
 		class casltybtn: cTab_MenuItem
 		{
@@ -615,7 +618,7 @@ class CasulSub1: cTab_RscControlsGroup
 			idc = -1;
 			text = "$STR_ctab_core_MenuExit";
 			x = 0;
-			y = MENU_elementY(cTab_MENU_MAX_ELEMENTS);
+			y = MENU_elementY(cTab_CASUL_SUB1_MENU_MAX_ELEMENTS);
 			w = QUOTE(MENU_W);
 			h = QUOTE(MENU_elementH);
 			sizeEx = QUOTE(MENU_sizeEx);
@@ -626,12 +629,12 @@ class CasulSub1: cTab_RscControlsGroup
 
 class GenSub1: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 5
+	#define cTab_GEN_SUB1_MENU_MAX_ELEMENTS 5
 	idc = 3306;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_GEN_SUB1_MENU_MAX_ELEMENTS);
 	class controls
 	{
 		class IGUIBack_2205: cTab_IGUIBack
@@ -640,7 +643,7 @@ class GenSub1: cTab_RscControlsGroup
 			x = 0;
 			y = 0;
 			w = QUOTE(MENU_W);
-			h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+			h = MENU_H(cTab_GEN_SUB1_MENU_MAX_ELEMENTS);
 		};
 		class hqbtn: cTab_MenuItem
 		{
@@ -670,21 +673,21 @@ class GenSub1: cTab_RscControlsGroup
 		};
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_DotMenu,3,1,100,100,mil_dot_blue)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_CircleMenu,4,1,101,100,mil_circle_blue)
-		CTAB_MENU_ENTRY_EXIT(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_ENTRY_EXIT(cTab_GEN_SUB1_MENU_MAX_ELEMENTS)
 	};
 };
 
 class MenuCustomText: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 8
+	#define cTab_MENU_CUSTOM_TEXT_MAX_ELEMENTS 8
 	idc = 3308;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_MENU_CUSTOM_TEXT_MAX_ELEMENTS);
 	class controls
 	{
-		CTAB_MENU_BACKGROUND(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_BACKGROUND(cTab_MENU_CUSTOM_TEXT_MAX_ELEMENTS)
 		CTAB_MENU_ENTRY($STR_ctab_core_TSMenu,1,2,0,1)
 		CTAB_MENU_ENTRY($STR_ctab_core_AWithTSMenu,2,2,1,1)
 		CTAB_MENU_ENTRY($STR_ctab_core_BWithTSMenu,3,2,2,1)
@@ -692,21 +695,21 @@ class MenuCustomText: cTab_RscControlsGroup
 		CTAB_MENU_ENTRY($STR_ctab_core_DWithTSMenu,5,2,4,1)
 		CTAB_MENU_ENTRY($STR_ctab_core_EWithTSMenu,6,2,5,1)
 		CTAB_MENU_ENTRY($STR_ctab_core_FWithTSMenu,7,2,6,1)
-		CTAB_MENU_ENTRY_EXIT(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_ENTRY_EXIT(cTab_MENU_CUSTOM_TEXT_MAX_ELEMENTS)
 	};
 };
 
 class MenuControlPoint: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 9
+	#define cTab_MENU_CONTROL_POINT_MAX_ELEMENTS 9
 	idc = 3309;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_MENU_CONTROL_POINT_MAX_ELEMENTS);
 	class controls
 	{
-		CTAB_MENU_BACKGROUND(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_BACKGROUND(cTab_MENU_CONTROL_POINT_MAX_ELEMENTS)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointUnspec,1,1,200,1,10032500001301000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointContact,2,1,102,1,10032500001305000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointCoord,3,1,103,1,10032500001306000000)
@@ -715,45 +718,47 @@ class MenuControlPoint: cTab_RscControlsGroup
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointEC,6,1,203,1,10032500001309000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointRLY,7,1,204,1,10032500001314000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointSP,8,1,205,1,10032500001316000000)
-		CTAB_MENU_ENTRY_EXIT(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_ENTRY_EXIT(cTab_MENU_CONTROL_POINT_MAX_ELEMENTS)
 	};
 };
 
 class MenuManoeuvre: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 5
+	#define cTab_MENU_MANOEUVRE_MAX_ELEMENTS 5
 	idc = 3310;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_MENU_MANOEUVRE_MAX_ELEMENTS);
 	class controls
 	{
-		CTAB_MENU_BACKGROUND(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_BACKGROUND(cTab_MENU_MANOEUVRE_MAX_ELEMENTS)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_Outpost,1,1,104,1,10032500001601000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_CombatOutpost,2,1,105,1,10032500001602050000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointTarget,3,1,106,1,10032500001603000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointPD,4,1,206,1,10032500001604000000)
-		CTAB_MENU_ENTRY_EXIT(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_ENTRY_EXIT(cTab_MENU_MANOEUVRE_MAX_ELEMENTS)
 	};
 };
 
 
 class MenuSustainment: cTab_RscControlsGroup
 {
-	#define cTab_MENU_MAX_ELEMENTS 5
+	#define cTab_MENU_SUSTAINMENT_MAX_ELEMENTS 5
 	idc = 3311;
 	x = QUOTE(MENU_X);
 	y = QUOTE(MENU_Y);
 	w = QUOTE(MENU_W);
-	h = MENU_H(cTab_MENU_MAX_ELEMENTS);
+	h = MENU_H(cTab_MENU_SUSTAINMENT_MAX_ELEMENTS);
 	class controls
 	{
-		CTAB_MENU_BACKGROUND(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_BACKGROUND(cTab_MENU_SUSTAINMENT_MAX_ELEMENTS)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointCCP,1,1,207,1,10032500003205000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointDET,2,1,208,1,10032500003207000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointMED,3,1,209,1,10032500003211000000)
 		CTAB_MENU_ENTRY_ICON($STR_ctab_core_PointR3P,4,1,210,1,10032500003212000000)
-		CTAB_MENU_ENTRY_EXIT(cTab_MENU_MAX_ELEMENTS)
+		CTAB_MENU_ENTRY_EXIT(cTab_MENU_SUSTAINMENT_MAX_ELEMENTS)
 	};
 };
+
+#endif

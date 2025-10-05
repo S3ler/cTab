@@ -1,6 +1,12 @@
+#ifndef CTAB_TABLET_CONTROLS_H
+#define CTAB_TABLET_CONTROLS_H
+// FIXME: Adding header guard will most likely break cTab_Tablet_controls.hpp and cTab_android_controls.hpp
+
 // Background definition
-#define GUI_GRID_PX_W 2048 // width in pixels
-#define GUI_GRID_PX_H 2048 // hight in pixels
+// width in pixels
+#define GUI_GRID_PX_W 2048
+// height in pixels
+#define GUI_GRID_PX_H 2048
 
 // Base macros to convert pixel space to screen space
 #define pxToScreen_X(PIXEL) QUOTE((PIXEL) / GUI_GRID_PX_W * GUI_GRID_W + GUI_GRID_X)
@@ -444,3 +450,5 @@ class cTab_Tablet_notification: cTab_RscText_Tablet {
     w = pxToScreen_W(cTab_GUI_tablet_SCREEN_CONTENT_W * 0.5);
     colorBackground[] = COLOR_BLACK;
 };
+
+#endif

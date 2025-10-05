@@ -1,6 +1,8 @@
 // Background definition
-#define GUI_GRID_PX_W 2048 // width in pixels
-#define GUI_GRID_PX_H 2048 // hight in pixels
+// width in pixels
+#define GUI_GRID_PX_W 2048
+// height in pixels
+#define GUI_GRID_PX_H 2048
 
 // Base macros to convert pixel space to screen space
 #define pxToScreen_X(PIXEL) QUOTE((PIXEL) / GUI_GRID_PX_W * GUI_GRID_W + GUI_GRID_X)
